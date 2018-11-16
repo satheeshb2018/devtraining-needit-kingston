@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element attributes="update_synch=true" extends="dl_matcher" label="prioritymatching" max_length="40" name="x_58872_needit_prioritymatching" type="collection">
+        <element choice="1" label="Critical/NonCritical" max_length="40" name="critical_noncritical" type="string">
+            <choice>
+                <element label="Non Critical" value="Non Critical"/>
+                <element label="Critical" sequence="1" value="Critical"/>
+            </choice>
+        </element>
+        <element choice="1" label="Down/Degraded" max_length="40" name="down_degraded" type="string">
+            <choice>
+                <element label="Down" sequence="1" value="Down"/>
+                <element label="Degraded" sequence="2" value="Degraded"/>
+            </choice>
+        </element>
+        <element choice="1" label="High/Standard Priority" max_length="40" name="high_standard_priority" type="string">
+            <choice>
+                <element label="Standard Priority" value="Standard Priority"/>
+                <element label="High Priority" sequence="1" value="High Priority"/>
+            </choice>
+        </element>
+        <element choice="1" display="true" label="Impacted user" max_length="40" name="impacted_user" type="string">
+            <choice>
+                <element label="Multiple User" value="Multiple User"/>
+                <element label="Single User" sequence="1" value="Single User"/>
+            </choice>
+        </element>
+        <element choice="1" label="PRTY" max_length="20" name="prty" type="integer">
+            <choice>
+                <element label="1" value="1"/>
+                <element label="2" value="2"/>
+                <element label="3" value="3"/>
+                <element label="4" value="4"/>
+                <element label="5" value="5"/>
+            </choice>
+        </element>
+    </element>
+</database>
